@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #1b1625, #2f2841);
+    height: 10%;
+}
+
+header div {
+    display: flex;
+    margin: 10px;
+}
+
+.nivel select {
+    background-color: #8cffc9;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 180px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    background-color: #2f2841;
+    overflow: hidden;
+}
+
+#numAleatorio{
+    font-size: 300px;
+    color: white;
+}
+
+
+p {
+    font-size: 25px;
+    margin: 10px;
+    color: #00ff88;
+    text-align: center;
+}
+
+span {
+    color: white;
+}
+
+.botoes button {
+    padding: 8px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #00aa5b;
+    color: white;
+    max-width: 150px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.botoes button:hover{
+    background-color: #6c3d8385;
+    scale: 0.95;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to top, #1b1625, #2f2841);
+    height: 10%;
+}
+
+@media screen and (max-width: 900px) {
+    footer, header {
+        flex-direction: column;
+        height: 30%;
+    }
+    main {
+        height: 40%;
+    }
+    #numAleatorio {
+        font-size: 200px;
+    }
+    
+}
